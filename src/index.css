@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-noto-sans-jp font-noto-sans-mono;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-2 text-sm text-gray-900 bg-white border border-gray-200 rounded-lg dark:bg-neutral-700 dark:border-neutral-600 dark:text-white resize-none;
+  }
+  .btn {
+    @apply px-4 py-2 ml-2 text-sm font-medium
+  }
+  .btn-primary {
+    @apply btn text-white bg-blue-500 rounded-lg hover:bg-blue-600
+  }
+  .btn-dark-outline {
+    @apply btn text-white bg-transparent border border-neutral-300 rounded-lg hover:bg-neutral-300 hover:text-neutral-700
+  }
+}
